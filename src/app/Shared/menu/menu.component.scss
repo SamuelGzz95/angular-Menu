@@ -24,3 +24,15 @@
 .example-tree div[role='group'] > .mat-tree-node {
   padding-left: 40px;
 }
+
+.example-tree {
+  margin-left: 7px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.btnRoute {
+  width: 100%;
+  text-align: left;
+  padding-left: 0;
+}

@@ -3,26 +3,36 @@ import { Component, OnInit } from '@angular/core';
 import { MatTreeNestedDataSource } from '@angular/material/tree';
 interface FoodNode {
   name: string;
+  active?: boolean;
   children?: FoodNode[];
 }
 
 const TREE_DATA: FoodNode[] = [
   {
     name: 'Fruit',
+    active: true,
     children: [{ name: 'Apple' }, { name: 'Banana' }, { name: 'Fruit loops' }],
   },
   {
     name: 'Vegetables',
+    active: true,
     children: [
       {
         name: 'Green',
+        active: true,
         children: [{ name: 'Broccoli' }, { name: 'Brussels sprouts' }],
       },
       {
         name: 'Orange',
+        active: true,
         children: [{ name: 'Pumpkins' }, { name: 'Carrots' }],
       },
     ],
+  },
+  {
+    name: 'dd',
+    active: true,
+    children: [],
   },
 ];
 
