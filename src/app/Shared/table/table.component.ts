@@ -2,7 +2,7 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export interface columns {
   nameID: string;
-  title: stirng;
+  title: string;
 }
 
 @Component({
@@ -12,12 +12,13 @@ export interface columns {
 })
 export class TableComponent implements OnInit {
   @Input() dataSource: any[] = [];
-  @Input() objColumns: columns[] = [];
+  @Input() objColumns: any[] = [];
   displayedColumns: string[] = [];
 
   constructor() {}
 
   ngOnInit(): void {
-    this.displayedColumns = this.objColumns.map((a) => a.nameID);
+    this.displayedColumns = this.objColumns.map((a) => a.name);
+    console.log(this.displayedColumns);
   }
 }

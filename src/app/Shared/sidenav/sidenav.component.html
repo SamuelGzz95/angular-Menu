@@ -3,6 +3,11 @@
     <app-menu></app-menu>
   </mat-drawer>
   <mat-drawer-content>
-    <app-table [dataSource]="dataSource" [objColumns]="objColumns"></app-table>
+    <div style="height:30%; width: 80%; display:inline-block;">
+      <app-table
+        [dataSource]="dataSource"
+        [objColumns]="objColumns"
+      ></app-table>
+    </div>
   </mat-drawer-content>
 </mat-drawer-container>
