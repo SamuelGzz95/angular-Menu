@@ -9,9 +9,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { ToolbarComponent } from './Shared/toolbar/toolbar.component';
 import { SidenavComponent } from './Shared/sidenav/sidenav.component';
 import { MenuComponent } from './Shared/menu/menu.component';
+import { TableComponent } from './Shared/table/table.component';
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, MenuComponent],
+  declarations: [ToolbarComponent, SidenavComponent, MenuComponent, TableComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
