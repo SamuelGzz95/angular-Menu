@@ -10,7 +10,7 @@ export class SidenavComponent {
   @ViewChild('drawer') drawer: MatDrawer;
 
   dataSource: any[] = [
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
+    { position: {type:"info",info:"1"}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
     { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
     { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
     { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
