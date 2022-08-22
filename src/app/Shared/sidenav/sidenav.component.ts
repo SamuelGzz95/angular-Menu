@@ -10,14 +10,62 @@ export class SidenavComponent {
   @ViewChild('drawer') drawer: MatDrawer;
 
   dataSource: any[] = [
-    { position: {type:"info",info:"1"}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
-    { position: {type:"info",info:1}, name: {type:"info",info:'Hydrogen'}, weight: {type:"info",info:1.0079}, symbol:{type:"info",info:'H'}, icon:{type:"icon", icon:"delete"} },
+    {
+      position: { type: 'info', info: '1' },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
+    {
+      position: { type: 'info', info: 1 },
+      name: { type: 'info', info: 'Hydrogen' },
+      weight: { type: 'info', info: 1.0079 },
+      symbol: { type: 'info', info: 'H' },
+      icon: { type: 'icon', icon: 'delete', tooltip: 'Borrar' },
+    },
     // { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
     // { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
     // { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
@@ -31,23 +79,23 @@ export class SidenavComponent {
   objColumns: any[] = [
     {
       name: 'position',
-      view: 'Position',
+      view: 'ID',
     },
     {
       name: 'name',
-      view: 'Name',
+      view: 'Nombre',
     },
     {
       name: 'weight',
-      view: 'Weight',
+      view: 'Peso',
     },
     {
       name: 'symbol',
-      view: 'Symbol',
+      view: 'Simbolo',
     },
     {
       name: 'icon',
-      view: 'icon',
+      view: 'Accion',
     },
   ];
 

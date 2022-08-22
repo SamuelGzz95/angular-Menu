@@ -16,6 +16,8 @@
         }}</span>
         <span
           class="material-icons row-icon"
+          matTooltip="{{element[column.name].tooltip}}"
+          matTooltipPosition="above"
           *ngIf="element[column.name].type == 'icon'"
           >{{ element[column.name].icon }}</span
         >
