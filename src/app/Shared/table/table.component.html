@@ -11,7 +11,14 @@
       matColumnDef="{{ column.name }}"
     >
       <th mat-header-cell *matHeaderCellDef>{{ column.view }}</th>
-      <td mat-cell *matCellDef="let element">{{ element[column.name] }}</td>
+      <td mat-cell *matCellDef="let element">
+        <span *ngIf="element[column.name].type == 'info'">{{
+          element[column.name].info
+        }}</span>
+        <span  class="material-icons" *ngIf="element[column.name].type == 'icon'">{{
+        element[column.name].icon
+      }}</span>
+      </td>
     </ng-container>
 
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
