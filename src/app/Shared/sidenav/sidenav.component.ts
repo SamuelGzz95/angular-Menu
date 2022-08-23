@@ -1,4 +1,5 @@
-import { Component, ViewChild } from '@angular/core';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
 
 @Component({
@@ -7,8 +8,21 @@ import { MatDrawer } from '@angular/material/sidenav';
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent {
+  constructor(private observer: BreakpointObserver) {}
   @ViewChild('drawer') drawer: MatDrawer;
-
+  @Output() public sidenavChange = new EventEmitter<any>();
+  ngAfterViewInit() {
+    this.observer.observe(['(max-width: 800px)']).subscribe((res) => {
+      if (res.matches) {
+        this.drawer.mode = 'over';
+        this.drawer.close();
+      } else {
+        this.drawer.mode = 'side';
+        this.drawer.open();
+      }
+      this.Mode();
+    });
+  }
   dataSource: any[] = [
     {
       position: { type: 'info', info: '1' },
@@ -101,5 +115,9 @@ export class SidenavComponent {
 
   Toogle() {
     this.drawer.toggle();
+  }
+
+  Mode() {
+    this.sidenavChange.emit({ mode: this.drawer.mode });
   }
 }

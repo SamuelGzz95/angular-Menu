@@ -9,10 +9,15 @@ import { SidenavComponent } from 'src/app/Shared/sidenav/sidenav.component';
 export class ToolbarComponent implements OnInit {
   constructor() {}
   @ViewChild('sidenav') sidenav: SidenavComponent;
-
+  modeSideNav: string = '';
   ngOnInit(): void {}
 
   SidenavT() {
     this.sidenav.Toogle();
+  }
+
+  SidenavChange(event: any) {
+    this.modeSideNav = event.mode;
+    console.log('tt', this.modeSideNav);
   }
 }

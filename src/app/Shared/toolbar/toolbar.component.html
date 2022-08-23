@@ -1,19 +1,15 @@
 <mat-toolbar color="primary">
   <button
     mat-icon-button
-    class="example-icon"
     aria-label="Example icon-button with menu icon"
     (click)="SidenavT()"
+    *ngIf="modeSideNav === 'over'"
   >
     <mat-icon>menu</mat-icon>
   </button>
   <span>My App</span>
   <span class="example-spacer"></span>
-  <button
-    mat-icon-button
-    class="example-icon favorite-icon"
-    aria-label="Example icon-button with heart icon"
-  >
+  <button mat-icon-button>
     <mat-icon>favorite</mat-icon>
   </button>
   <button
@@ -25,4 +21,4 @@
   </button>
 </mat-toolbar>
 
-<app-sidenav #sidenav></app-sidenav>
+<app-sidenav #sidenav (sidenavChange)="SidenavChange($event)"></app-sidenav>
