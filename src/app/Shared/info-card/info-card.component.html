@@ -1,0 +1,42 @@
+<mat-card class="infoCardContainer" *ngIf="data" id="{{ data.id }}">
+  <mat-card-header>
+    <mat-card-title>{{ data.title }}</mat-card-title>
+    <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
+    <span class="spacer"></span>
+    <div mat-card-actions *ngIf="data.primaryBtn">
+      <button
+        mat-button
+        matTooltip="{{ data.primaryBtn.toolTip }}"
+        matTooltipPosition="right"
+      >
+        {{ data.primaryBtn.text
+        }}<span
+          class="material-icons row-icon"
+          *ngIf="data.primaryBtn.icon != ''"
+          >{{ data.primaryBtn.icon }}</span
+        >
+      </button>
+    </div>
+  </mat-card-header>
+  <mat-card-content>
+    <p *ngIf="data.textContent">{{ data.textContent }}</p>
+    <app-list-info-card
+      *ngIf="data.listContent.length > 0"
+      [dataList]="data.listContent"
+    ></app-list-info-card>
+  </mat-card-content>
+  <mat-card-actions align="end" *ngIf="data.secondaryBtn">
+    <button
+      mat-button
+      matTooltip="{{ data.secondaryBtn.toolTip }}"
+      matTooltipPosition="right"
+    >
+      {{ data.secondaryBtn.text
+      }}<span
+        class="material-icons row-icon"
+        *ngIf="data.secondaryBtn.icon != ''"
+        >{{ data.secondaryBtn.icon }}</span
+      >
+    </button>
+  </mat-card-actions>
+</mat-card>

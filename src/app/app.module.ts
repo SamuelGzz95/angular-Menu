@@ -10,9 +10,11 @@ import { ToolbarComponent } from './Shared/toolbar/toolbar.component';
 import { SidenavComponent } from './Shared/sidenav/sidenav.component';
 import { MenuComponent } from './Shared/menu/menu.component';
 import { TableComponent } from './Shared/table/table.component';
+import { InfoCardComponent } from './Shared/info-card/info-card.component';
+import { ListInfoCardComponent } from './Shared/info-card/list-info-card/list-info-card.component';
 
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, MenuComponent, TableComponent],
+  declarations: [ToolbarComponent, SidenavComponent, MenuComponent, TableComponent, InfoCardComponent, ListInfoCardComponent],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,

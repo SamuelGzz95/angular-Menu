@@ -1,6 +1,11 @@
 import { BreakpointObserver } from '@angular/cdk/layout';
 import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
 import { MatDrawer } from '@angular/material/sidenav';
+import {
+  InfoCard,
+  BtnInfo,
+  ListContent,
+} from 'src/app/Shared/Interface/IInfoCard';
 
 @Component({
   selector: 'app-sidenav',
@@ -113,6 +118,42 @@ export class SidenavComponent {
     },
   ];
 
+  objInfoCard: InfoCard = {
+    id: 1,
+    title: 'Este es un ejemplo',
+    subtitle: 'Subtitulu',
+    textContent: 'Este es un ejemploo!!!',
+    listContent: [
+      {
+        img: '',
+        title: 'Primera Fila',
+        text: 'Este texto es de la fila 1',
+        tertiaryBtn: new BtnInfo(),
+      },
+      {
+        img: '',
+        title: 'Segunda Fila',
+        text: 'Este texto es de la fila 2',
+        tertiaryBtn: new BtnInfo(),
+      },
+      {
+        img: '',
+        title: 'Tercera Fila',
+        text: 'Este texto es de la fila 3',
+        tertiaryBtn: new BtnInfo(),
+      },
+    ],
+    primaryBtn: {
+      icon: 'delete',
+      text: 'Borrar',
+      toolTip: '',
+    },
+    secondaryBtn: {
+      icon: 'edit',
+      text: 'Editar',
+      toolTip: '',
+    },
+  };
   Toogle() {
     this.drawer.toggle();
   }
