@@ -144,13 +144,13 @@ export class SidenavComponent {
       },
     ],
     primaryBtn: {
-      icon: 'delete',
-      text: 'Borrar',
+      icon: 'close',
+      text: '',
       toolTip: '',
     },
     secondaryBtn: {
       icon: 'edit',
-      text: 'Editar',
+      text: 'Editar ',
       toolTip: '',
     },
   };

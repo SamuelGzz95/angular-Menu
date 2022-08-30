@@ -5,12 +5,11 @@
     <span class="spacer"></span>
     <div mat-card-actions *ngIf="data.primaryBtn">
       <button
-        mat-button
+        mat-icon-button
         matTooltip="{{ data.primaryBtn.toolTip }}"
         matTooltipPosition="right"
       >
-        {{ data.primaryBtn.text
-        }}<span
+        <span
           class="material-icons row-icon"
           *ngIf="data.primaryBtn.icon != ''"
           >{{ data.primaryBtn.icon }}</span
