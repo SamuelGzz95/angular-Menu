@@ -5,7 +5,7 @@ import {
   InfoCard,
   BtnInfo,
   ListContent,
-} from 'src/app/Shared/Interface/IInfoCard';
+} from 'src/app/shared/models/IInfoCard';
 
 @Component({
   selector: 'app-sidenav',

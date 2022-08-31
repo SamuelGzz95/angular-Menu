@@ -6,15 +6,10 @@ import { MaterialExampleModule } from '../material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
 import { HttpClientModule } from '@angular/common/http';
-import { ToolbarComponent } from './Shared/toolbar/toolbar.component';
-import { SidenavComponent } from './Shared/sidenav/sidenav.component';
-import { MenuComponent } from './Shared/menu/menu.component';
-import { TableComponent } from './Shared/table/table.component';
-import { InfoCardComponent } from './Shared/info-card/info-card.component';
-import { ListInfoCardComponent } from './Shared/info-card/list-info-card/list-info-card.component';
 
+import { SharedModule } from './shared/shared.module';
 @NgModule({
-  declarations: [ToolbarComponent, SidenavComponent, MenuComponent, TableComponent, InfoCardComponent, ListInfoCardComponent],
+  declarations: [],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
@@ -23,8 +18,9 @@ import { ListInfoCardComponent } from './Shared/info-card/list-info-card/list-in
     MatNativeDateModule,
     MaterialExampleModule,
     ReactiveFormsModule,
+    SharedModule,
   ],
   providers: [],
-  bootstrap: [ToolbarComponent],
+  bootstrap: [],
 })
 export class AppModule {}

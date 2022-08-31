@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ListContent } from 'src/app/Shared/Interface/IInfoCard';
+import { ListContent } from 'src/app/shared/models/IInfoCard';
 
 @Component({
   selector: 'app-list-info-card',

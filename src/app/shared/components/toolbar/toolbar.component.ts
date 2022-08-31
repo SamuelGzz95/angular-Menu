@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { SidenavComponent } from 'src/app/Shared/sidenav/sidenav.component';
+import { SidenavComponent } from 'src/app/shared/components/sidenav/sidenav.component';
 
 @Component({
   selector: 'app-toolbar',

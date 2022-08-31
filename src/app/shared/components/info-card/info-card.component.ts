@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { InfoCard } from 'src/app/Shared/Interface/IInfoCard';
+import { InfoCard } from 'src/app/shared/models/IInfoCard';
 
 @Component({
   selector: 'app-info-card',
